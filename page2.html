@@ -12,16 +12,18 @@
 </head>
 
 <body bgcolor=#00CCFF>
-<form action="/result">
+<form>
   <div>
  <label for="phone"> Введите номер теефона</label>
-   <input type='text'></input>
+   <input id="phone" type='text'></input>
 </div>
    <div>
    <label for="Cash"> Введите сумму</label>
    <input type='text'></input>
 </div>
-   <button type="submit">Submit</button>
+   <button onclick="isValid()">Submit</button>
     <button type="reset">Reset</button>
+    <p id='message'></p>
+    <script src='page1.js'></script>
 </body>
 </html>
