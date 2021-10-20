@@ -1,29 +1,22 @@
 <html>
 <head>
 
-<style>
-.class1{color:#000000;font-size:13;font-family:Arial;}
-</style>
-
-<script>
-
-
-</script>
 </head>
 
-<body bgcolor=#00CCFF>
+<body bgcolor=#00CCFF onload="operatorW();">
+   <h1 id>Пополнение счета <div id='id_operator'></div> </h1> 
 <form>
   <div>
- <label for="phone"> Введите номер теефона</label>
-   <input id="phone" type='text'></input>
+ <label for="phone"> Введите номер телефона</label>
+   <input id="phone" type='text' required></input>
 </div>
    <div>
    <label for="Cash"> Введите сумму</label>
-   <input type='text'></input>
+   <input type='text' required></input>
 </div>
    <button onclick="isValid()">Submit</button>
     <button type="reset">Reset</button>
     <p id='message'></p>
-    <script src='page1.js'></script>
+<script src='page1.js'></script>
 </body>
 </html>
