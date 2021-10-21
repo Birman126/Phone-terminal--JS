@@ -1,22 +1,23 @@
 <html>
 <head>
-
+   <link rel='stylesheet' href='index.css'>
 </head>
 
 <body bgcolor=#00CCFF onload="operatorW();">
    <h1 id>Пополнение счета <div id='id_operator'></div> </h1> 
 <form>
   <div>
- <label for="phone"> Введите номер телефона</label>
-   <input id="phone" type='text' required></input>
-</div>
+      <label for="phone"> Введите номер телефона</label>
+      <input id="phone" type='text' required></input>
+   </div>
    <div>
-   <label for="Cash"> Введите сумму</label>
-   <input type='text' required></input>
-</div>
-   <button onclick="isValid()">Submit</button>
-    <button type="reset">Reset</button>
-    <p id='message'></p>
-<script src='page1.js'></script>
+      <label for="Cash"> Введите сумму</label>
+      <input type='text' required></input>
+   </div>
+   <button onclick="isValid(), isValidSum()">Submit</button>
+   <button type="reset">Reset</button>
+   <p id='message'></p>
+   <p id='messageSum'></p>
+<script src='index.js'></script>
 </body>
 </html>
