@@ -1,8 +1,10 @@
 console.log(1)
-var operator = '';
-//document.getElementById("operator").innerHTML = operator;
+var operator ='s'
+var text = 'Би'
+
+const operatorW = (text) => {operator = text; console.log('функция - ', operator)}
+document.getElementById('id_operator').innerHTML=operator;
 console.log(operator)
-const operatorW = (operator) => {document.getElementById('id_operator').innerHTML=operator;}
 const isValid = () => {
         var re = /^\d[\d\(\)\ -]{4,14}\d$/;
         var myPhone = document.getElementById('phone').value;
