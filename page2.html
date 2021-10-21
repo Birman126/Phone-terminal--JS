@@ -1,6 +1,6 @@
 <html>
 <head>
-   <link rel='stylesheet' href='index.css'>
+   <link rel='stylesheet' href='Style.css'>
 </head>
 
 <body bgcolor=#00CCFF onload="operatorW();">
@@ -11,13 +11,14 @@
       <input id="phone" type='text' required></input>
    </div>
    <div>
-      <label for="Cash"> Введите сумму</label>
-      <input type='text' required></input>
+      <label for="Sum"> Введите сумму</label>
+      <input id ="Sum" type='text' required min="1" max="1000"></input>
    </div>
-   <button onclick="isValid(), isValidSum()">Submit</button>
+   <button onclick="isValid(), isValidSum(), Sucess()">Submit</button>
+   <br>
    <button type="reset">Reset</button>
    <p id='message'></p>
    <p id='messageSum'></p>
-<script src='index.js'></script>
+<script src='Script.js'></script>
 </body>
 </html>
