@@ -5,20 +5,26 @@
 
 <body bgcolor=#00CCFF onload="operatorW();">
    <h1 id>Пополнение счета <div id='id_operator'></div> </h1> 
-<form>
+<form onsubmit="return false">
   <div>
       <label for="phone"> Введите номер телефона</label>
       <input id="phone" type='text' required></input>
    </div>
    <div>
       <label for="Sum"> Введите сумму</label>
-      <input id ="Sum" type='text' required min="1" max="1000"></input>
+      <input id ="Sum" type='text' required></input>
    </div>
-   <button onclick="isValid(), isValidSum(), Sucess()">Submit</button>
-   <br>
-   <button type="reset">Reset</button>
+   <div>
+      <button onclick="isValid(), isValidSum(), alert(isSucess())">Submit</button>
+   </div>
+   <div>
+      <button type="reset" value='remove' onclick='reset()'>Reset</button>
+   </div>
+   <div>
    <p id='message'></p>
    <p id='messageSum'></p>
+   </div>
+   
 <script src='Script.js'></script>
 </body>
 </html>
